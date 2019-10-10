@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#86b6c3</color>
+    <color name="colorPrimaryDark">#72959f</color>
     <color name="colorAccent">#D81B60</color>
+
+
+    <color name="greyLight">#757575</color>
+    <color name="grayMediumLight">#FFE7E7E7</color>
+    <color name="greyMedium">#666666</color>
+    <color name="greyDark">#424242</color>
+    <color name="grayLowDark">#8A000000</color>
+
+    <color name="colorThirdLowDark">#DE7986CB</color>
+
+    <color name="opacityMediumLight">#E2ffffff</color>
+    <color name="opacityHighLight">#8Cffffff</color>
+    <color name="opacityLowLight">#DEFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="trendsGray">#E5E5E5</color>
+
+    <color name="dark_blue">#607D8B</color>
+    <color name="opacityHighGrey">#C1C1C1</color>
+    <color name="opacityExHighDark">#B5C2CE</color>
+    <color name="opacityExLowDark">#FF626262</color>
+    <color name="opacityLowDark">#E2000000</color>
+    <color name="opacityMediumDark">#54000000</color>
+    <color name="opacityMHigh">#3D000000</color>
+    <color name="opacityHighDark">#E5E5E5</color>
+    <color name="opacityExtraHighDark">#12000000</color>
+    <color name="greyExtraLight">#E0E0E0</color>
+    <color name="sms_background">#E7F1FD</color>
+    <color name="ripple_effect">#42ffffff</color>
+    <color name="opacityWhite">#F2F2F2</color>
+    <color name="veryLightGray">#F5F5F5</color>
+
+    <color name="chartTextColor">#999999</color>
+    <color name="trendMonthColor">#45000000</color>
+
+    <color name="yellow">#FDD835</color>
+    <color name="yellowLight">#aafdd835</color>
+    <color name="yellowDark">#FBC02D</color>
+    <color name="brownPrimary">#FF605113</color>
+
+    <color name="gridColor">#FFDDDCDC</color>
+    <color name="light_billing_gray">#455A64</color>
+    <color name="dark_billing_gray">#263238</color>
+    <color name="secondaryDark">#DE000000</color>
+    <color name="darkGreySlider">#DFDDDD</color>
+
+    <color name="gray_66">#66000000</color>
+    <color name="color_green">#49AF59</color>
+
+    <color name="light_blue">#86b6c3</color>
+
+    <color name="whiteSmoke">#F7F6F3</color>
+
+    <color name="color_divider">#1F000000</color>
 </resources>

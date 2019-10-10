@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PetShop</string>
+    <string name="pet_price">%1$.2f %2$s</string>
+    <string name="animal_type_placeholder">Animal Type</string>
+    <string name="animal_age_placeholder">Animal age</string>
+    <string name="animal_name_placeholder">Animal Name</string>
+    <string name="btn_photo_placeholder">Photo</string>
+    <string name="btn_animals_placeholder">Animals</string>
+    <string name="gallery">Gallery</string>
+    <string name="animals">Animals</string>
+    <string name="place_holder_text">Place Holder Text</string>
+    <string name="details_place_holder">Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusmod tempor ut labore incididunt et dolore magna aliqua.</string>
+    <string name="add_pet">Add Pet</string>
 </resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ex_small_padding">2dp</dimen>
+    <dimen name="extra_small_padding">4dp</dimen>
+    <dimen name="ex_sm_padding">5dp</dimen>
+    <dimen name="sm_padding">6dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="small_plus_padding">10dp</dimen>
+    <dimen name="extra_medium_padding">12dp</dimen>
+    <dimen name="extra__medium_plus_padding">14dp</dimen>
+    <dimen name="ex_medium_plus_padding">15dp</dimen>
+    <dimen name="medium_padding">16dp</dimen>
+    <dimen name="ex_medium_padding">18dp</dimen>
+    <dimen name="extra_plus_large_padding">19dp</dimen>
+    <dimen name="ex_large_padding">20dp</dimen>
+
+    <dimen name="large_padding">24dp</dimen>
+    <dimen name="extra_large_padding">28dp</dimen>
+    <dimen name="extra_large_plus_padding">32dp</dimen>
+
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="filter_button_height">36dp</dimen>
+    <dimen name="filter_button_group">48sp</dimen>
+    <dimen name="general_height">64dp</dimen>
+    <dimen name="general_width">64dp</dimen>
+    <dimen name="primary_width">72dp</dimen>
+    <dimen name="primary_height">48dp</dimen>
+    <dimen name="primary_extend_width">80dp</dimen>
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="permission_screen_margin">40dp</dimen>
+
+    <dimen name="domain_name_margin">26dp</dimen>
+    <dimen name="category_details_toolbar_height">60dp</dimen>
+    <dimen name="privacy_toolbar">58dp</dimen>
+    <dimen name="category_details_toolbar_height_plus">68dp</dimen>
+    <dimen name="category_detail_image_height">308dp</dimen>
+
+    <dimen name="small_line_spacing">3sp</dimen>
+    <dimen name="secondary_line_spacing">4sp</dimen>
+    <dimen name="medium_line_spacing">7sp</dimen>
+    <dimen name="line_spacing">9sp</dimen>
+    <dimen name="item_line_text_size">13sp</dimen>
+    <dimen name="item_underline_text_size">12sp</dimen>
+    <dimen name="secondary_text_size">14sp</dimen>
+    <dimen name="ex_secondary_text_size">15sp</dimen>
+    <dimen name="primary_text_size">16sp</dimen>
+    <dimen name="total_detail_text_size">18sp</dimen>
+    <dimen name="third_text_size">20sp</dimen>
+    <dimen name="fourth_text_size">24sp</dimen>
+    <dimen name="extra_text_size">30sp</dimen>
+
+    <dimen name="logo_width">32dp</dimen>
+    <dimen name="logo_height">32dp</dimen>
+    <dimen name="bank_logo_height">24dp</dimen>
+
+    <dimen name="large_padding_dialog">45dp</dimen>
+    <dimen name="large_height">112dp</dimen>
+    <dimen name="size_138">138dp</dimen>
+    <dimen name="size_160">160dp</dimen>
+    <dimen name="card_width">240dp</dimen>
+    <dimen name="app_rate_dialog_width">288dp</dimen>
+    <dimen name="dialog_balance_width">290dp</dimen>
+    <dimen name="app_rate_dialog_height">398dp</dimen>
+    <dimen name="max_cards_height">338dp</dimen>
+    <dimen name="max_text_view_width">320dp</dimen>
+    <dimen name="max_dashbaord_toggles_view_height">145dp</dimen>
+    <dimen name="max_billing_button_height">104dp</dimen>
+    <dimen name="billing_background_height">530dp</dimen>
+    <dimen name="billing_background_width">349dp</dimen>
+    <dimen name="size_54">54dp</dimen>
+    <dimen name="demo_button_width">235dp</dimen>
+    <dimen name="demo_button_height">69dp</dimen>
+    <dimen name="size_288">288dp</dimen>
+    <dimen name="demo_people_width">163dp</dimen>
+    <dimen name="demo_people_height">93dp</dimen>
+    <dimen name="size_55">55dp</dimen>
+    <dimen name="thumb_size">56dp</dimen>
+    <dimen name="progress_track_size">8dp</dimen>
+    <dimen name="slider_height">66dp</dimen>
+
+    <dimen name="button_size_44">44dp</dimen>
+
+    <item name="item_line_text_size_float" format="float" type="dimen">13.0</item>
+    <item name="item_underline_text_size_float" format="float" type="dimen">12.0</item>
+
+</resources>

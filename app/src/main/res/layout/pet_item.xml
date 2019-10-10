@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_card_view_domain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintHeight_max="@dimen/primary_height"
+    app:layout_constraintHeight_min="@dimen/header_height"
+    android:paddingTop="@dimen/small_padding"
+    android:background="@drawable/ripple_effect" >
+
+    <TextView
+        android:id="@+id/petName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:layout_marginStart="@dimen/large_padding"
+        android:text="@string/animal_name_placeholder"
+        android:textColor="@color/secondaryDark"
+        android:textSize="@dimen/secondary_text_size"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:visibility="visible"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@id/petAge"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@id/petPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/petAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_padding"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/ex_secondary_text_size"
+        android:maxLines="1"
+        android:text="@string/animal_age_placeholder"
+        android:textColor="@color/grayLowDark"
+        android:textSize="@dimen/item_line_text_size"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/petType"
+        app:layout_constraintEnd_toStartOf="@id/petPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/petName"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/petPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="@dimen/medium_padding"
+        android:textColor="@color/opacityLowDark"
+        android:textSize="@dimen/primary_text_size"
+        android:text="97.90 RON"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/petType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:layout_marginTop="@dimen/ex_small_padding"
+        android:layout_marginStart="@dimen/large_padding"
+        android:layout_marginBottom="@dimen/small_padding"
+        android:text="@string/animal_type_placeholder"
+        android:textColor="@color/opacityMediumDark"
+        android:textSize="@dimen/item_line_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/petAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/light_blue"
+        android:layout_marginStart="@dimen/large_padding"
+        android:layout_marginEnd="@dimen/medium_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
