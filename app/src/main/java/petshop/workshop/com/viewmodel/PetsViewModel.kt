@@ -89,4 +89,12 @@ class PetsViewModel @Inject constructor(contextProvider: ContextProvider) {
             .observeOn(AndroidSchedulers.mainThread())
             .doOnComplete { preparePets() }
             .subscribe()!!
+
+    fun addPet(pet: Pet) =
+        Completable.fromAction { petDao.insertDataToDatabase(pet) }
+        .subscribeOn(Schedulers.computation())
+        .observeOn(AndroidSchedulers.mainThread())
+        .doOnComplete { preparePets(shouldReload = true) }
+        .subscribe()!!
+
 }
