@@ -10,5 +10,11 @@
     <string name="animals">Animals</string>
     <string name="place_holder_text">Place Holder Text</string>
     <string name="details_place_holder">Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusmod tempor ut labore incididunt et dolore magna aliqua.</string>
-    <string name="add_pet">Add Pet</string>
+    <string name="add_pet">Add Pet!</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="pet_age">Pet Age</string>
+    <string name="pet_type">Pet Type</string>
+    <string name="pet_details">Pet Details</string>
+    <string name="pet_price_string">Pet Price</string>
+    <string name="image_url">Image URL</string>
 </resources>
