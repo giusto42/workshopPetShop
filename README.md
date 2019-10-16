@@ -24,7 +24,7 @@ Steps in order to setup Expense Report project
 - Clone or download Expense Report project from Github
 - Open Android Studio
 - Select 'Open an existing Android Studio project'
-- Choose the 'ExpenseReport/MessageFilter/' folder
+- Choose the 'workshopPetShop/' folder
 
 #### Tips for the first run
 
