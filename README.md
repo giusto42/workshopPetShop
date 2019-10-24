@@ -19,9 +19,9 @@ Linux - /usr/lib/jvm/java-{version-of-java}-openjdk/
 
 #
 
-Steps in order to setup Expense Report project
+Steps in order to setup PetShop project
 
-- Clone or download Expense Report project from Github
+- Clone or download PetShop project from Github
 - Open Android Studio
 - Select 'Open an existing Android Studio project'
 - Choose the 'workshopPetShop/' folder
