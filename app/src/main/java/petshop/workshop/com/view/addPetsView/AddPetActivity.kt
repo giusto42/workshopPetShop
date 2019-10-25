@@ -43,16 +43,9 @@ class AddPetActivity : BaseActivity() {
         if (!checkValidDate())
             return
 
-        val pet = Pet(
-            name = nameField.editText!!.text.toString(),
-            age = ageField.editText!!.text.toString().toInt(),
-            type = typeField.editText!!.text.toString(),
-            details = detailsField.editText!!.text.toString(),
-            price = priceField.editText!!.text.toString().toFloat(),
-            imageUrl = imageField.editText!!.text.toString()
-        )
+       //TODO: Add pet to DB
 
-        petsViewModel.addPet(pet)
+//        petsViewModel.addPet()
 
         this.onBackPressed()
     }

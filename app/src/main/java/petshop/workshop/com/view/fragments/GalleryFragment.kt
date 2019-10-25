@@ -43,17 +43,11 @@ class GalleryFragment : Fragment() {
         compositeDisposable = CompositeDisposable()
 
         next.setOnClickListener {
-            updateView(contentList[nextCounter])
-            previousCounter++
-            nextCounter++
-            handleButtonsVisibility()
+           //Todo: Implement next button action
         }
 
         previous.setOnClickListener {
-            updateView(contentList[previousCounter])
-            nextCounter--
-            previousCounter--
-            handleButtonsVisibility()
+            //Todo: Implement previous button action
         }
 
         petsViewModel.subscribeForGallery()

@@ -28,13 +28,14 @@ class PetDetailsActivity : BaseActivity() {
         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left)
         back.setOnClickListener { this.onBackPressed() }
 
+        //TODO: uncomment the code
         pet = PetDetailsActivityArgs.fromBundle(intent.extras!!).pet!!
-        petName.text = pet.name
-        petDetails.text = pet.details
+//        petName.text = pet.name
+//        petDetails.text = pet.details
 
         val image = petsViewModel.getImageForPet(pet.id)
         if (image.first.isEmpty()) {
-            petImage.loadFromUrl(pet.imageUrl)
+//            petImage.loadFromUrl(pet.imageUrl)
         } else {
             petImage.setImageBitmap(image.second as Bitmap)
         }

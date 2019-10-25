@@ -43,7 +43,6 @@ class PetsListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.pets_list_fragment, container, false)
     }
 
@@ -61,8 +60,7 @@ class PetsListFragment : Fragment() {
             .subscribeOn(Schedulers.computation())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                Timber.d("Debug: $it")
-                this.updateRecycleView(it)
+                //TODO: Update recycleView
             }, {
                 Timber.d(it)
             }).addTo(compositeDisposable)

@@ -55,13 +55,14 @@ class PetsViewModel @Inject constructor(contextProvider: ContextProvider) {
     fun prepareGallery(shouldReload: Boolean = false) {
         if (petsImage.isEmpty() || shouldReload) {
             val galleryListCallback = Callable<List<Pair<String, Bitmap>>> {
+                //TODO: Uncomment the code
                 pets.fold(mutableListOf()) { list, pet ->
-                    list.add(
-                        Pair(
-                            pet.name,
-                            BitmapFactory.decodeStream(URL(pet.imageUrl).openConnection().getInputStream())
-                        )
-                    )
+//                    list.add(
+//                        Pair(
+//                            pet.name,
+//                            BitmapFactory.decodeStream(URL(pet.imageUrl).openConnection().getInputStream())
+//                        )
+//                    )
                     return@fold list
                 }
             }
@@ -83,12 +84,13 @@ class PetsViewModel @Inject constructor(contextProvider: ContextProvider) {
 
     fun getImageForPet(petId: Int) = if (petsImage.isEmpty())  Pair("", "") else petsImage[petId - 1]
 
-    fun addDummyPetsToDB() =
-        Completable.fromAction { petDao.insertDataToDatabase(*Pet.dummyPetsData().toTypedArray()) }
-            .subscribeOn(Schedulers.computation())
-            .observeOn(AndroidSchedulers.mainThread())
-            .doOnComplete { preparePets() }
-            .subscribe()!!
+    //TODO: Uncomment the code and remove `null`
+    fun addDummyPetsToDB() = null
+//        Completable.fromAction { petDao.insertDataToDatabase(*Pet.dummyPetsData().toTypedArray()) }
+//            .subscribeOn(Schedulers.computation())
+//            .observeOn(AndroidSchedulers.mainThread())
+//            .doOnComplete { preparePets() }
+//            .subscribe()!!
 
     fun addPet(pet: Pet) =
         Completable.fromAction { petDao.insertDataToDatabase(pet) }
