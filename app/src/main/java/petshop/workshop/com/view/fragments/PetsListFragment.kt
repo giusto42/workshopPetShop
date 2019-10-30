@@ -59,8 +59,8 @@ class PetsListFragment : Fragment() {
         viewModel.subscribeForPets()
             .subscribeOn(Schedulers.computation())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({
-                //TODO: Update recycleView
+            .subscribe({petList ->
+                updateRecycleView(petList)
             }, {
                 Timber.d(it)
             }).addTo(compositeDisposable)
