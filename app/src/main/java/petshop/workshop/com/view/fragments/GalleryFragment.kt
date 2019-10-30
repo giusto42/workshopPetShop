@@ -55,7 +55,10 @@ class GalleryFragment : Fragment() {
         }
 
         previous.setOnClickListener {
-            //Todo: Implement previous button action
+            updateView(petList[previousCounter])
+            nextCounter--
+            previousCounter--
+            handleButtonsVisibility()
         }
     }
 
