@@ -57,13 +57,12 @@ class GalleryFragment : Fragment() {
     }
 
     private fun updateView(pet: Pet) {
-        //Todo: Uncomment the code
-//        petName.text = pet.name
-//        Glide
-//            .with(this)
-//            .load(pet.imageUrl)
-//            .transition(DrawableTransitionOptions.withCrossFade())
-//            .into(petImage)
+        petName.text = pet.name
+        Glide
+            .with(this)
+            .load(pet.imageUrl)
+            .transition(DrawableTransitionOptions.withCrossFade())
+            .into(petImage)
     }
 
     private fun handleButtonsVisibility() {
