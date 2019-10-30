@@ -23,7 +23,10 @@ class PetsListAdapter (private val petsList: List<Pet>, val context: Context): R
     }
 
     override fun onBindViewHolder(holder: PetsViewHolder, position: Int) {
-        //TODO: Populate the list with data (eg. holder.txtPetName.text = petsList[position].name)
+        holder.txtPetName.text = petsList[position].name
+        holder.txtPetAge.text = petsList[position].age.toString()
+        holder.txtPetPrice.text = context.getString(R.string.pet_price, petsList[position].price, "RON")
+        holder.txtPetType.text = petsList[position].type
 
         holder.itemView.setOnClickListener {
             onItemClicked?.invoke(petsList[position])
