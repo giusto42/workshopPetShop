@@ -1,11 +1,9 @@
 package petshop.workshop.com.view.petDetailsView
 
-import android.graphics.Bitmap
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_pet_details.*
 import petshop.workshop.com.PetShopApplication
 import petshop.workshop.com.R
-import petshop.workshop.com.extensions.loadFromUrl
 import petshop.workshop.com.persistence.Pet
 import petshop.workshop.com.view.BaseActivity
 import petshop.workshop.com.viewmodel.PetsViewModel
@@ -33,11 +31,10 @@ class PetDetailsActivity : BaseActivity() {
 //        petName.text = pet.name
 //        petDetails.text = pet.details
 
-        val image = petsViewModel.getImageForPet(pet.id)
-        if (image.first.isEmpty()) {
-//            petImage.loadFromUrl(pet.imageUrl)
-        } else {
-            petImage.setImageBitmap(image.second as Bitmap)
-        }
+//        Glide
+//            .with(this)
+//            .load(pet.imageUrl)
+//            .transition(DrawableTransitionOptions.withCrossFade())
+//            .into(petImage)
     }
 }

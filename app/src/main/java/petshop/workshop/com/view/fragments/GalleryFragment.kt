@@ -1,11 +1,12 @@
 package petshop.workshop.com.view.fragments
 
-import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
@@ -13,6 +14,7 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.gallery_fragment.*
 import petshop.workshop.com.PetShopApplication
 import petshop.workshop.com.R
+import petshop.workshop.com.persistence.Pet
 import petshop.workshop.com.viewmodel.PetsViewModel
 import javax.inject.Inject
 
@@ -22,10 +24,11 @@ class GalleryFragment : Fragment() {
     lateinit var petsViewModel: PetsViewModel
 
     private lateinit var compositeDisposable: CompositeDisposable
+
     private var previousCounter = -1
     private var nextCounter = 1
+    private var petList: List<Pet> = listOf()
 
-    private var contentList: List<Pair<String, Bitmap>> = listOf()
     init {
         PetShopApplication.diInjector().inject(this)
     }
@@ -42,6 +45,8 @@ class GalleryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         compositeDisposable = CompositeDisposable()
 
+        loadView()
+
         next.setOnClickListener {
            //Todo: Implement next button action
         }
@@ -49,25 +54,20 @@ class GalleryFragment : Fragment() {
         previous.setOnClickListener {
             //Todo: Implement previous button action
         }
-
-        petsViewModel.subscribeForGallery()
-            .subscribeOn(Schedulers.computation())
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe {
-                contentList = it
-                updateView(it.first())
-            }.addTo(compositeDisposable)
-
-        petsViewModel.prepareGallery()
     }
 
-    private fun updateView(content: Pair<String, Bitmap>) {
-        petName.text = content.first
-        petImage.setImageBitmap(content.second)
+    private fun updateView(pet: Pet) {
+        //Todo: Uncomment the code
+//        petName.text = pet.name
+//        Glide
+//            .with(this)
+//            .load(pet.imageUrl)
+//            .transition(DrawableTransitionOptions.withCrossFade())
+//            .into(petImage)
     }
 
     private fun handleButtonsVisibility() {
-        if (nextCounter >= contentList.size) {
+        if (nextCounter >= petList.size) {
             next.visibility = View.INVISIBLE
         } else {
             next.visibility = View.VISIBLE
@@ -78,6 +78,17 @@ class GalleryFragment : Fragment() {
         } else {
             previous.visibility = View.VISIBLE
         }
+    }
+
+    private fun loadView() {
+        petsViewModel.subscribeForPets()
+            .subscribeOn(Schedulers.computation())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe {
+                petList = it
+                updateView(it.first())
+            }.addTo(compositeDisposable)
+        petsViewModel.preparePets()
     }
 
     override fun onDestroy() {
