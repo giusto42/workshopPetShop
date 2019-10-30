@@ -44,12 +44,12 @@ class PetsViewModel @Inject constructor(contextProvider: ContextProvider) {
         }
     }
 
-    fun addDummyPetsToDB() = null
-//        Completable.fromAction { petDao.insertDataToDatabase(*Pet.dummyPetsData().toTypedArray()) }
-//            .subscribeOn(Schedulers.computation())
-//            .observeOn(AndroidSchedulers.mainThread())
-//            .doOnComplete { preparePets() }
-//            .subscribe()!!
+    fun addDummyPetsToDB() =
+        Completable.fromAction { petDao.insertDataToDatabase(*Pet.dummyPetsData().toTypedArray()) }
+            .subscribeOn(Schedulers.computation())
+            .observeOn(AndroidSchedulers.mainThread())
+            .doOnComplete { preparePets() }
+            .subscribe()!!
 
     fun addPet(pet: Pet) =
         Completable.fromAction { petDao.insertDataToDatabase(pet) }
