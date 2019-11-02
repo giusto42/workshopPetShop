@@ -33,6 +33,11 @@ data class Pet(
     @ColumnInfo(name = "imageUrl")
     val imageUrl: String
 
+
+
+
+
+
 ) : Parcelable {
 
     companion object {
